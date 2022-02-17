@@ -1,0 +1,6 @@
+{"firstName":"Вадим","lastName":"Пономарев","email":"pvs.versia@gmail.com","password":"sadsw","age":"47","city":"Zaporozhye"}
+{"firstName":"Вадим","lastName":"Пономарев","email":"pvs.versia@gmail.com","password":"43","age":"47","city":"Zaporozhye"}
+{"firstName":"Вадим","lastName":"Пономарев","email":"pvs@gmail.com","password":"q1212","age":"47","city":"Zaporozhye"}
+{"firstName":"Вадим","lastName":"sws","email":"pvs.versia@gmail.com","password":"","age":"","city":""}
+{"firstName":"Вадим","lastName":"sws","email":"pvs.versia1@gmail.com","password":"","age":"","city":""}
+{"firstName":"Вадим","lastName":"Пономарев","email":"vspon1@gmail.com","password":"weeq","age":"47","city":"Zaporozhye"}

@@ -5,10 +5,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
 </head>
 <body>
 <form
-        action="/home" method="post"
+        id="loginForm"
+        name="loginForm"
+        action="home" method="post"
         style="
         display: flex;
         flex-wrap: wrap;
@@ -19,22 +22,22 @@
         border: 1px solid"
 >
     <label for="firstName">First Name:</label>
-    <input name="firstName" type="text">
+    <input name="firstName" type="text" required/>
     <br>
     <label for="lastName"></label>
-    Last Name:<input name="lastName" type="text">
+    Last Name:<input name="lastName" type="text" required/>
     <br>
     <label for="email">Email:</label>
-    <input name="email" type="email">
+    <input name="email" type="email" required/>
     <br>
     <label for="password">Password:</label>
-    <input name="password" type="password">
+    <input name="password" type="password"/>
     <br>
     <label for="age">Age:</label>
-    <input name="age" type="number">
+    <input name="age" type="number"/>
     <br>
     <label for="city">City:</label>
-    <input name="city" type="text">
+    <input name="city" type="text"/>
     <br>
     <button type="submit">Submit</button>
 </form>

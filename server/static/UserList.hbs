@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+{{#each data}}
+    <div >
+        <a href="/user_list/{{email}}" style="display: flex; flex-wrap: wrap;">
+            <div style="margin-right: 2px">{{firstName}}</div>
+            <div style="margin-right: 2px">{{lastName}}</div>
+            <div style="margin-right: 2px">{{email}}</div>
+            <div style="margin-right: 2px">{{password}}</div>
+        </a>
+    </div>
+{{/each}}
+</body>
+</html>
