@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const app = () => {
     const express = require('express')
+    const {engine} = require('express-handlebars')
     const path = require('path')
     const fs = require('fs')
     const hbs = require('hbs')
@@ -11,7 +12,12 @@ const app = () => {
 
     app.set('views', path.join(__dirname, 'static'))
     app.set('view engine', 'hbs')
-    app.use(express.urlencoded());
+    app.engine('hbs', engine({
+        layoutsDir: path.join(__dirname, 'static/layouts'),
+        defaultLayout: 'main',
+        extname: 'hbs'
+    }))
+    app.use(express.urlencoded({extended: true}));
     app.use(express.json());
 
     app.get('/', (req, res) => {
