@@ -1,4 +1,6 @@
-<div style="margin-right: 2px">{{data.firstName}}</div>
-<div style="margin-right: 2px">{{data.lastName}}</div>
-<div style="margin-right: 2px">{{data.email}}</div>
-<div style="margin-right: 2px">{{data.password}}</div>
+{{#with data}}
+    <div style="margin-right: 2px">{{firstName}}</div>
+    <div style="margin-right: 2px">{{lastName}}</div>
+    <div style="margin-right: 2px">{{email}}</div>
+    <div style="margin-right: 2px">{{password}}</div>
+{{/with}}
