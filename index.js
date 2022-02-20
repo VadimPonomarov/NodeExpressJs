@@ -1,3 +1,3 @@
-const {app} = require('./server/App')
+const {app} = require('./hw3/App')
 
 app()

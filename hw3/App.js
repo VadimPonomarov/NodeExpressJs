@@ -1,17 +1,14 @@
-const {errorMissedDataRoute} = require('./routes/error_missedData/missedDataRoute');
 const app = () => {
     const express = require('express')
     const {engine} = require('express-handlebars')
     const path = require('path')
-    const fs = require('fs')
     const hbs = require('hbs')
     hbs.registerPartial('header','header')
     const {
         loginRoute,
         userListRoute,
         userDetailsRoute,
-        homeRoute,
-        errorEmailRoute
+        homeRoute
     } = require('./routes')
 
     const app = express()
@@ -32,9 +29,8 @@ const app = () => {
     app.use(userListRoute)
     app.use(userDetailsRoute)
     app.use(homeRoute)
-    app.use(errorEmailRoute)
-    app.use(errorMissedDataRoute)
-    app.use((req, res) => {
+    app.use(
+        (req, res) => {
         res.render('Error404')
     })
 

@@ -1,0 +1,2 @@
+{"firstName":"Вадим","lastName":"Пономарев","email":"pvs.versia@gmail.com","password":"sadsw","age":"47","city":"Zaporozhye"}
+{"firstName":"Вадим","lastName":"Пономарев","email":"pvs.versia1990@gmail.com","password":"","age":"47","city":"Zaporozhye"}
