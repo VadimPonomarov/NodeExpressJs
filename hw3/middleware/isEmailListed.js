@@ -5,14 +5,14 @@ const isEmailListed = (req, res, next) => {
 
     const userList = fs.readFileSync(
         path.join(process.cwd(),
-            'server/db/users.txt'
+            'hw3/db/users.txt'
         ),
         {encoding: 'utf8'}
     )
     const data = userList.trim().split('\n')
         .find(item => JSON.parse(item).email === email)
     if (data) {
-        res.redirect('/error_email')
+        res.render('Login', {error: 'Email is already exist'})
     } else {
         next()
     }
