@@ -1,9 +1,9 @@
-const {Router} = require('express')
-const loginRoute = Router()
+const {Router} = require('express');
+const loginRoute = Router();
 
 loginRoute.get('/',
     (req, res) => {
         res.render('Login')
-    })
+    });
 
-module.exports = {loginRoute}
+module.exports = {loginRoute};
