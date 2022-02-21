@@ -6,8 +6,8 @@ const {appendDataDB} = require('../../services/services');
 
 homeRoute.post('/home', isEmailListed, isDataFull,
     (req, res) => {
-        appendDataDB(req.body)
-        res.redirect('/user_list')
+        appendDataDB(req.body);
+        res.redirect('/user_list');
     });
 
 module.exports = {homeRoute};

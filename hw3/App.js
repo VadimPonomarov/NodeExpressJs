@@ -3,7 +3,7 @@ const app = () => {
     const {engine} = require('express-handlebars');
     const path = require('path');
     const hbs = require('hbs');
-    hbs.registerPartial('header','header');
+    hbs.registerPartial('header', 'header');
     const {
         loginRoute,
         userListRoute,
@@ -31,12 +31,12 @@ const app = () => {
     app.use(homeRoute);
     app.use(
         (req, res) => {
-        res.render('Error404')
-    });
+            res.render('Error404');
+        });
 
     app.listen(port, () => {
-        console.log(`Example app listening on port ${port}`)
+        console.log(`Example app listening on port ${port}`);
     });
-}
+};
 
 module.exports = {app};

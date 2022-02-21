@@ -4,7 +4,7 @@ const userListRoute = Router();
 
 userListRoute.get('/user_list',
     (req, res) => {
-        res.render('UserList', {data: getUserList()})
+        res.render('UserList', {data: getUserList()});
     });
 
 module.exports = {userListRoute};
